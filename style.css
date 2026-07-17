@@ -1,0 +1,138 @@
+/* Google Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+.container {
+  width: 100%;
+  max-width: 430px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+.container:hover {
+  transform: translateY(-5px);
+}
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+.amount p,
+.from p,
+.to p {
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+.amount input {
+  width: 100%;
+  height: 55px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 0 15px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.amount input:focus {
+  border-color: #667eea;
+}
+.dropdown {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 8px 12px;
+  background: white;
+}
+.select-container img {
+  width: 35px;
+}
+.select-container select {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  cursor: pointer;
+}
+.swap {
+  margin-top: 25px;
+}
+.swap i {
+  font-size: 24px;
+  cursor: pointer;
+  color: #667eea;
+  transition: 0.3s;
+}
+.swap i:hover {
+  transform: rotate(180deg);
+}
+.msg {
+  background: #f4f6ff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.updated {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+button {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 12px;
+  background: #667eea;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #5563d8;
+  transform: translateY(-2px);
+}
+button i {
+  margin-right: 8px;
+}
+@media(max-width:480px){
+.container{
+padding:20px;
+}
+.dropdown{
+flex-direction:column;
+gap:20px;
+}
+.swap{
+margin:0;
+}
+.swap i{
+transform:rotate(90deg);
+}
+}
